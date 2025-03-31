@@ -6,13 +6,13 @@
         <meta name="description" content="Data Analysist ,software engineer">
         <meta name="" content="width=device-width,initial-scale=1.0">
         <title>Daphine Nekesa portfolio</title>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
             
-            <h1 style="text-align: center;">Audio,video attributes Assignment</h1>
-            <nav style="text-align: center;">
+            
+            <nav class="nav-bar" >
                 <a href="">Home</a>
                 <a href="">About Us</a>
                 <a href="">Skills</a>
@@ -20,8 +20,9 @@
                 <a href="">Projects</a>
                 <a href="">Contact</a>
             </nav>
+            <h1 style="text-align: center;">Audio,video attributes Assignment</h1>
         </header>
-        <body>
+        <section>
               <!-- audio attribute -->
             <h3>Lecrae_-_I'll_Find_You_ft._Tori_Kelly Song</h3>
             <audio controls>
@@ -29,45 +30,42 @@
         </audio>
         <!-- video attribute -->
         <h3>Self Love Poem by Poetic Sparkles</h3>
-            <video width="300" height="300" controls>
+        <div class="div1">
+            <video width="500" height="500" controls>
            <source src="Christian.mp4" type="video/ogg"> christian religion video</video>
+           <img id="img" src="1.jpg" alt="image" height="500" width="500">
+        </div>
 
-            <form name='form'  action="submit">
+            <form id='form'  action="submit">
                 <h3>Sign Up Form</h3>
                 <div>
-                <label for="name">First Name</label><br>
-                <input type="text" id="fname" placeholder="Enter your First name" minlength="2" required><br></div>
+                <label id="label" for="name">First Name</label><br>
+                <input class="input"  type="text" id="fname" placeholder="Enter your First name" minlength="2" required><br></div>
                 <div>
-                <label for="name">Last Name</label><br>
-                <input type="text" id="lname" placeholder="Enter your Last name" max="20" required><br></div>
-                <div><label for="name">Email</label><br>
-                <input type="email" id="email" placeholder="Enter your email" max="30" required><br></div>
+                <label id="label" for="name">Last Name</label><br>
+                <input class="input"  type="text" id="lname" placeholder="Enter your Last name" max="20" required><br></div>
+                <div><label id="label" for="name">Email</label><br>
+                <input class="input" type="email" id="email" placeholder="Enter your email" max="30" required><br></div>
                 
                 <div>
-                <label for="name">Gender</label><br>
-                <select name="" id="gender">
+                <label  id="label" for="name">Gender</label><br>
+                <select class="input"  name="" id="gender">
                     <option value="female">Female</option>
                     <option value="male">Male</option>
                     <option value="other">Other</option>
                 </select><br></div>
                 <div>
-                <label for="name">City</label><br>
-                <input type="text" id="city" placeholder="Enter your city name" max="20" required><br></div>
+                <label id="label" for="name">City</label><br>
+                <input class="input" type="text" id="city" placeholder="Enter your city name" max="20" required><br></div>
                 <div>
-                <label for="name">Create Password</label><br>
-                <input type="password" id="password" placeholder="Create strong password" minlength="8" required><br></div>
+                <label id="label" for="name">Create Password</label><br>
+                <input class="input" type="password" id="password" placeholder="Create strong password" minlength="8" required><br></div>
                 <div>
-                <label for="name">Confirm Password</label><br>
-                <input type="password" id="cpassword" placeholder="Confirm your password" min="8" required><br></div>
-                <div>
-                <label for="Tell Us About Yourself"></label><br>
-                <fieldset width="200">Describe Yourself in 3 words</fieldset></div><br>
-                <input type="button" value="submit"><br>
+                <label id="label" for="name">Confirm Password</label><br>
+                <input class="input" type="password" id="cpassword" placeholder="Confirm your password" min="8" required><br><br></div>
+                <input  id="button" value="submit"><br>
 
             </form>
-            <a href="">
-                <img src="1.jpg" alt="image">
-            </a>
             <p>click the above link to see the image</p>
             <table border="1">
                 
@@ -139,7 +137,7 @@
                 <li>Project management</li>
             </ul>
     
-        </body>
+        </section>
         <footer></footer>
     </body>
 </html>
